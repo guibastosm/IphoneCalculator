@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,7 @@ namespace Calculator {
         public string operador = "+";
         public frmMain() {
             InitializeComponent();
+            this.AutoSize = false;
         }
 
         private void btnLimparClick(object sender, EventArgs e) {
@@ -77,6 +79,24 @@ namespace Calculator {
             }
             else {
                 rtxt_Screen.Text = "" + btNumber.Text;
+                auxClear = false;
+                auxVirgula = false;
+            }
+            auxSelecionado = false;
+            rtxt_Screen.SelectionAlignment = HorizontalAlignment.Right;
+            btnLimparCores();
+        }
+
+        public void btnNumber0Click(object sender, EventArgs e)
+        {
+            Button btNumber = (Button)sender;
+            if (auxClear == false)
+            {
+                rtxt_Screen.Text = rtxt_Screen.Text + "0";
+            }
+            else
+            {
+                rtxt_Screen.Text = "" + "0";
                 auxClear = false;
                 auxVirgula = false;
             }
@@ -153,6 +173,68 @@ namespace Calculator {
 
             }
             rtxt_Screen.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
+        public GraphicsPath RoundedRectangle(RectangleF R, float d){
+            float r = d / 2;
+            GraphicsPath RoundedRectanglePath = new GraphicsPath();
+
+            RoundedRectanglePath.AddLine(R.X + r, R.Y, R.X + R.Width - d, R.Y);
+            RoundedRectanglePath.AddArc(R.X + R.Width - d, R.Y, d, d, 270, 90);
+            RoundedRectanglePath.AddLine(R.X + R.Width, R.Y + r, R.X + R.Width, R.Y + R.Height - d);
+            RoundedRectanglePath.AddArc(R.X + R.Width - d, R.Y + R.Height - d, d, d, 0, 90);
+            RoundedRectanglePath.AddLine(R.X + R.Width - d, R.Y + R.Height, R.X + r, R.Y + R.Height);
+            RoundedRectanglePath.AddArc(R.X, R.Y + R.Height - d, d, d, 90, 90);
+            RoundedRectanglePath.AddLine(R.X, R.Y + R.Height - d, R.X , R.Y + r);
+            RoundedRectanglePath.AddArc(R.X, R.Y, d, d, 180, 90);
+            RoundedRectanglePath.CloseFigure();
+
+            return RoundedRectanglePath;
+        }
+        protected override void OnPaint(PaintEventArgs e) {
+            GraphicsPath btnPadrao = new GraphicsPath();
+            btnPadrao.AddEllipse(0, 0, btn1.Width, btn1.Height);
+            RectangleF RectBtn = new RectangleF(0, 0, btn0.Width, btn0.Height);
+            GraphicsPath btnSec = RoundedRectangle(RectBtn, btn1.Width);
+
+            RectangleF RectForm = new RectangleF(0, 0, this.Width, this.Height);
+            GraphicsPath form = RoundedRectangle(RectForm, 50);
+
+            btn1.Region = new Region(btnPadrao);
+            btn2.Region = new Region(btnPadrao);
+            btn3.Region = new Region(btnPadrao);
+            btn4.Region = new Region(btnPadrao);
+            btn5.Region = new Region(btnPadrao);
+            btn6.Region = new Region(btnPadrao);
+            btn7.Region = new Region(btnPadrao);
+            btn8.Region = new Region(btnPadrao);
+            btn9.Region = new Region(btnPadrao);
+            btnVirgula.Region = new Region(btnPadrao);
+            btnMais.Region = new Region(btnPadrao);
+            btnMenos.Region = new Region(btnPadrao);
+            btnDividir.Region = new Region(btnPadrao);
+            btnVezes.Region = new Region(btnPadrao);
+            btnPorcento.Region = new Region(btnPadrao);
+            btnIgual.Region = new Region(btnPadrao);
+            btnClear.Region = new Region(btnPadrao);
+            btnMaisMenos.Region = new Region(btnPadrao);
+            btn0.Region = new Region(btnSec);
+            this.Region = new Region(form);
+
+        }
+        private Point mouseLocation;
+        private void TitleBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
+        }
+        private void Titlebar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
         }
     }
 }
