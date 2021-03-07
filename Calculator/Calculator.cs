@@ -75,10 +75,10 @@ namespace Calculator {
         public void btnNumberClick(object sender, EventArgs e) {
             Button btNumber = (Button)sender;
             if (auxClear == false) {
-                rtxt_Screen.Text = rtxt_Screen.Text + btNumber.Text;
+                rtxt_Screen.Text = rtxt_Screen.Text + btNumber.Text.Trim();
             }
             else {
-                rtxt_Screen.Text = "" + btNumber.Text;
+                rtxt_Screen.Text = "" + btNumber.Text.Trim();
                 auxClear = false;
                 auxVirgula = false;
             }
@@ -86,25 +86,6 @@ namespace Calculator {
             rtxt_Screen.SelectionAlignment = HorizontalAlignment.Right;
             btnLimparCores();
         }
-
-        public void btnNumber0Click(object sender, EventArgs e)
-        {
-            Button btNumber = (Button)sender;
-            if (auxClear == false)
-            {
-                rtxt_Screen.Text = rtxt_Screen.Text + "0";
-            }
-            else
-            {
-                rtxt_Screen.Text = "" + "0";
-                auxClear = false;
-                auxVirgula = false;
-            }
-            auxSelecionado = false;
-            rtxt_Screen.SelectionAlignment = HorizontalAlignment.Right;
-            btnLimparCores();
-        }
-
         public void btnOperadorClick(object sender, EventArgs e) {
             Button btOperador = (Button)sender;
             if (rtxt_Screen.Text != "") {

@@ -86,7 +86,7 @@ namespace Calculator
             this.btn0.Text = " 0";
             this.btn0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn0.UseVisualStyleBackColor = false;
-            this.btn0.Click += new System.EventHandler(this.btnNumber0Click);
+            this.btn0.Click += new System.EventHandler(this.btnNumberClick);
             // 
             // btn1
             // 
