@@ -148,10 +148,8 @@ namespace Calculator {
                     rtxt_Screen.Text = Convert.ToString(aux);
                     if (aux * 100 % 100 != 0) {
                         auxVirgula = true;
-                    }
-                    
+                    }                    
                 }
-
             }
             rtxt_Screen.SelectionAlignment = HorizontalAlignment.Right;
         }
