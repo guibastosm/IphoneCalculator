@@ -60,7 +60,7 @@ namespace Calculator
             this.btnIgual.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnIgual.FlatAppearance.BorderSize = 0;
             this.btnIgual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIgual.Font = new System.Drawing.Font("Verdana", 15.25F, System.Drawing.FontStyle.Bold);
+            this.btnIgual.Font = new System.Drawing.Font("SF UI Display", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIgual.ForeColor = System.Drawing.Color.White;
             this.btnIgual.Location = new System.Drawing.Point(210, 411);
             this.btnIgual.Name = "btnIgual";
@@ -77,13 +77,13 @@ namespace Calculator
             this.btn0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn0.FlatAppearance.BorderSize = 0;
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn0.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.ForeColor = System.Drawing.Color.White;
             this.btn0.Location = new System.Drawing.Point(12, 411);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(124, 60);
             this.btn0.TabIndex = 1;
-            this.btn0.Text = " 0";
+            this.btn0.Text = "  0";
             this.btn0.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn0.UseVisualStyleBackColor = false;
             this.btn0.Click += new System.EventHandler(this.btnNumberClick);
@@ -95,13 +95,14 @@ namespace Calculator
             this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn1.FlatAppearance.BorderSize = 0;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.White;
             this.btn1.Location = new System.Drawing.Point(12, 349);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(60, 60);
             this.btn1.TabIndex = 1;
-            this.btn1.Text = "1";
+            this.btn1.Text = "  1";
+            this.btn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -112,13 +113,14 @@ namespace Calculator
             this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn3.FlatAppearance.BorderSize = 0;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.ForeColor = System.Drawing.Color.White;
             this.btn3.Location = new System.Drawing.Point(140, 349);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(60, 60);
             this.btn3.TabIndex = 1;
-            this.btn3.Text = "3";
+            this.btn3.Text = "  3";
+            this.btn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -129,13 +131,14 @@ namespace Calculator
             this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn2.FlatAppearance.BorderSize = 0;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.ForeColor = System.Drawing.Color.White;
             this.btn2.Location = new System.Drawing.Point(76, 349);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(60, 60);
             this.btn2.TabIndex = 1;
-            this.btn2.Text = "2";
+            this.btn2.Text = "  2";
+            this.btn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -146,13 +149,14 @@ namespace Calculator
             this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn4.FlatAppearance.BorderSize = 0;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn4.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.ForeColor = System.Drawing.Color.White;
             this.btn4.Location = new System.Drawing.Point(12, 287);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(60, 60);
             this.btn4.TabIndex = 1;
-            this.btn4.Text = "4";
+            this.btn4.Text = "  4";
+            this.btn4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -163,13 +167,15 @@ namespace Calculator
             this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn6.FlatAppearance.BorderSize = 0;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn6.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.ForeColor = System.Drawing.Color.White;
+            this.btn6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn6.Location = new System.Drawing.Point(140, 287);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(60, 60);
             this.btn6.TabIndex = 1;
-            this.btn6.Text = "6";
+            this.btn6.Text = "  6";
+            this.btn6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn6.UseVisualStyleBackColor = false;
             this.btn6.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -180,13 +186,14 @@ namespace Calculator
             this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn5.FlatAppearance.BorderSize = 0;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn5.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.ForeColor = System.Drawing.Color.White;
             this.btn5.Location = new System.Drawing.Point(76, 287);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(60, 60);
             this.btn5.TabIndex = 1;
-            this.btn5.Text = "5";
+            this.btn5.Text = "  5";
+            this.btn5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn5.UseVisualStyleBackColor = false;
             this.btn5.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -197,13 +204,14 @@ namespace Calculator
             this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn7.FlatAppearance.BorderSize = 0;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn7.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.Font = new System.Drawing.Font("SF UI Display", 20.25F);
             this.btn7.ForeColor = System.Drawing.Color.White;
             this.btn7.Location = new System.Drawing.Point(12, 225);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(60, 60);
             this.btn7.TabIndex = 1;
-            this.btn7.Text = "7";
+            this.btn7.Text = "  7";
+            this.btn7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -214,13 +222,13 @@ namespace Calculator
             this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Font = new System.Drawing.Font("SF UI Display", 18F);
             this.btnClear.ForeColor = System.Drawing.Color.Black;
             this.btnClear.Location = new System.Drawing.Point(12, 163);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(60, 60);
             this.btnClear.TabIndex = 1;
-            this.btnClear.Text = "AC";
+            this.btnClear.Text = " AC";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnLimparClick);
             // 
@@ -231,13 +239,14 @@ namespace Calculator
             this.btnPorcento.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPorcento.FlatAppearance.BorderSize = 0;
             this.btnPorcento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPorcento.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPorcento.Font = new System.Drawing.Font("SF UI Display", 18F);
             this.btnPorcento.ForeColor = System.Drawing.Color.Black;
             this.btnPorcento.Location = new System.Drawing.Point(140, 163);
             this.btnPorcento.Name = "btnPorcento";
             this.btnPorcento.Size = new System.Drawing.Size(60, 60);
             this.btnPorcento.TabIndex = 1;
-            this.btnPorcento.Text = "%";
+            this.btnPorcento.Text = "  %";
+            this.btnPorcento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPorcento.UseVisualStyleBackColor = false;
             this.btnPorcento.Click += new System.EventHandler(this.btnOperadorUnicoClick);
             // 
@@ -248,13 +257,14 @@ namespace Calculator
             this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn8.FlatAppearance.BorderSize = 0;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn8.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.Font = new System.Drawing.Font("SF UI Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.ForeColor = System.Drawing.Color.White;
             this.btn8.Location = new System.Drawing.Point(76, 225);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(60, 60);
             this.btn8.TabIndex = 1;
-            this.btn8.Text = "8";
+            this.btn8.Text = "  8";
+            this.btn8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btnNumberClick);
             // 
@@ -265,13 +275,14 @@ namespace Calculator
             this.btnMaisMenos.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMaisMenos.FlatAppearance.BorderSize = 0;
             this.btnMaisMenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaisMenos.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaisMenos.Font = new System.Drawing.Font("SF UI Display", 18F);
             this.btnMaisMenos.ForeColor = System.Drawing.Color.Black;
             this.btnMaisMenos.Location = new System.Drawing.Point(76, 163);
             this.btnMaisMenos.Name = "btnMaisMenos";
             this.btnMaisMenos.Size = new System.Drawing.Size(60, 60);
             this.btnMaisMenos.TabIndex = 1;
-            this.btnMaisMenos.Text = "+/-";
+            this.btnMaisMenos.Text = " +/-";
+            this.btnMaisMenos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMaisMenos.UseVisualStyleBackColor = false;
             this.btnMaisMenos.Click += new System.EventHandler(this.btnOperadorUnicoClick);
             // 
@@ -282,7 +293,7 @@ namespace Calculator
             this.btnMais.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMais.FlatAppearance.BorderSize = 0;
             this.btnMais.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMais.Font = new System.Drawing.Font("Verdana", 15.25F, System.Drawing.FontStyle.Bold);
+            this.btnMais.Font = new System.Drawing.Font("SF UI Display", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMais.ForeColor = System.Drawing.Color.White;
             this.btnMais.Location = new System.Drawing.Point(210, 349);
             this.btnMais.Name = "btnMais";
@@ -299,7 +310,7 @@ namespace Calculator
             this.btnMenos.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnMenos.FlatAppearance.BorderSize = 0;
             this.btnMenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenos.Font = new System.Drawing.Font("Verdana", 15.25F, System.Drawing.FontStyle.Bold);
+            this.btnMenos.Font = new System.Drawing.Font("SF UI Display", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenos.ForeColor = System.Drawing.Color.White;
             this.btnMenos.Location = new System.Drawing.Point(210, 287);
             this.btnMenos.Name = "btnMenos";
@@ -316,7 +327,7 @@ namespace Calculator
             this.btnVezes.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnVezes.FlatAppearance.BorderSize = 0;
             this.btnVezes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVezes.Font = new System.Drawing.Font("Verdana", 15.25F, System.Drawing.FontStyle.Bold);
+            this.btnVezes.Font = new System.Drawing.Font("SF UI Display", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVezes.ForeColor = System.Drawing.Color.White;
             this.btnVezes.Location = new System.Drawing.Point(210, 225);
             this.btnVezes.Name = "btnVezes";
@@ -333,7 +344,7 @@ namespace Calculator
             this.btnDividir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDividir.FlatAppearance.BorderSize = 0;
             this.btnDividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDividir.Font = new System.Drawing.Font("Verdana", 15.25F, System.Drawing.FontStyle.Bold);
+            this.btnDividir.Font = new System.Drawing.Font("SF UI Display", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDividir.ForeColor = System.Drawing.Color.White;
             this.btnDividir.Location = new System.Drawing.Point(210, 163);
             this.btnDividir.Name = "btnDividir";
@@ -350,13 +361,14 @@ namespace Calculator
             this.btnVirgula.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnVirgula.FlatAppearance.BorderSize = 0;
             this.btnVirgula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVirgula.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVirgula.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVirgula.ForeColor = System.Drawing.Color.White;
             this.btnVirgula.Location = new System.Drawing.Point(140, 411);
             this.btnVirgula.Name = "btnVirgula";
             this.btnVirgula.Size = new System.Drawing.Size(60, 60);
             this.btnVirgula.TabIndex = 1;
-            this.btnVirgula.Text = ",";
+            this.btnVirgula.Text = "   ,";
+            this.btnVirgula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVirgula.UseVisualStyleBackColor = false;
             this.btnVirgula.Click += new System.EventHandler(this.btnVirgulaClick);
             // 
@@ -378,11 +390,11 @@ namespace Calculator
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Verdana", 10.1F, System.Drawing.FontStyle.Bold);
+            this.title.Font = new System.Drawing.Font("SF UI  Text", 10F, System.Drawing.FontStyle.Bold);
             this.title.ForeColor = System.Drawing.Color.White;
             this.title.Location = new System.Drawing.Point(12, 15);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(99, 17);
+            this.title.Size = new System.Drawing.Size(88, 17);
             this.title.TabIndex = 3;
             this.title.Text = "Calculadora";
             // 
@@ -391,7 +403,7 @@ namespace Calculator
             this.rtxt_Screen.BackColor = System.Drawing.Color.Black;
             this.rtxt_Screen.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtxt_Screen.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.rtxt_Screen.Font = new System.Drawing.Font("Verdana", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxt_Screen.Font = new System.Drawing.Font("SF Pro Text", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxt_Screen.ForeColor = System.Drawing.Color.White;
             this.rtxt_Screen.Location = new System.Drawing.Point(12, 98);
             this.rtxt_Screen.Name = "rtxt_Screen";
@@ -407,13 +419,14 @@ namespace Calculator
             this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btn9.FlatAppearance.BorderSize = 0;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn9.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.Font = new System.Drawing.Font("SF Pro Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.ForeColor = System.Drawing.Color.White;
             this.btn9.Location = new System.Drawing.Point(140, 225);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(60, 60);
             this.btn9.TabIndex = 1;
-            this.btn9.Text = "9";
+            this.btn9.Text = "  9";
+            this.btn9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btnNumberClick);
             // 
